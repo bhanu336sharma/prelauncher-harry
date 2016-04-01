@@ -15,7 +15,7 @@ test:
 
 production:
 	adapter: postgresql
-	database: prelaunchr_test
+	database: prelaunchr_production
 	pool: 5
 	username: postgres
 	password: root
