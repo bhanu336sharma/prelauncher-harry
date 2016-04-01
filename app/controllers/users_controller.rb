@@ -72,8 +72,8 @@ class UsersController < ApplicationController
     return if address.nil?
 
     current_ip = IpAddress.find_by_address(address)
-    if current_ip.count<5
-      current_ip = IpAddress.create(address: address, count: count+=1)
+    if current_ip.nil?
+      current_ip = IpAddress.create(address: address, count: 1)
     elsif current_ip.count > 2
       logger.info('IP address has already appeared three times in our records.
                  Redirecting user back to landing page.')
