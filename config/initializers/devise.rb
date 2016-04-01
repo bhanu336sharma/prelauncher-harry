@@ -9,6 +9,7 @@ Devise.setup do |config|
   config.mailer_sender = "please-change-me-at-config-initializers-devise@example.com"
 
   config.secret_key = ENV["SECRET_KEY_BASE"]
+  config.secret_key = '660b51829cf27ae68ff5b994703802e85fa05c10d80b302e9f2dbf42bc71a18c41a7521c6ed7d76bffa9522df163ddd790a13897d324df2f59b303c4c9e1ca95'
 
   # Configure the class responsible to send e-mails.
   # config.mailer = "Devise::Mailer"
